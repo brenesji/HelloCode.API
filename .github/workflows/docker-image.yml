@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag bcglabacr01.azurecr.io/ingress-controller:latest
+      run: docker build . --file Dockerfile --tag bcglabacr01.azurecr.io/ingress-controller:v1
      
     - name: Azure Container Registry Login
       uses: Azure/docker-login@v1
@@ -28,4 +28,4 @@ jobs:
         login-server: bcglabacr01.azurecr.io
         
     - name: Push Image  
-      run: docker push bcglabacr01.azurecr.io/ingress-controller:latest
+      run: docker push bcglabacr01.azurecr.io/ingress-controller:v1
