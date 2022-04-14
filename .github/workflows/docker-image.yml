@@ -1,0 +1,31 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+
+  build_push_image:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag bcglabacr01.azurecr.io/ingress-controller:latest
+     
+    - name: Azure Container Registry Login
+      uses: Azure/docker-login@v1
+      with:
+        # Container registry username
+        username: bcglabacr01
+        # Container registry password
+        password: vQign8/X5HO3XhfXFWFW05CtHqpYV+dM 
+        # Container registry server url
+        login-server: bcglabacr01.azurecr.io
+        
+    - name: Push Image  
+      run: docker push bcglabacr01.azurecr.io/ingress-controller:latest
