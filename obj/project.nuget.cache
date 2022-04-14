@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "tVWbJ54N6vyfJpF/R7RMNF1wzA5+hbhjThQNaeK5CW0gLnBLhZd/6ai4VgMpZw2zILsRgcIo+CwqN1zVkkcL9g==",
+  "success": true,
+  "projectFilePath": "/Users/jairobrenes/Documents/Trainings/HelloCode.API/HelloCode.API.csproj",
+  "expectedPackageFiles": [
+    "/Users/jairobrenes/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/jairobrenes/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/jairobrenes/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/Users/jairobrenes/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/Users/jairobrenes/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/Users/jairobrenes/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
